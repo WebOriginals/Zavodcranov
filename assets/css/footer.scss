@@ -1,0 +1,127 @@
+@import "style.scss";
+
+.footer {
+  padding: 1rem 0;
+  background: $background-color-bl;
+  color: #FFFFFF;
+  font-size: 14px;
+
+  a {
+    color: #FFFFFF;
+  }
+
+  .sec1-main_address-email-phone-top {
+    margin: 1rem 0;
+  }
+
+  .address-top {
+    width: 80%;
+  }
+
+  .btn {
+    width: 210px;
+
+    &:hover{
+      outline: 2px solid $background-color;
+    }
+  }
+
+  .wrapper-btn {
+    text-align: left;
+  }
+}
+
+.mobile {
+  .footer-title {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid #fff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .wrapper-comp {
+    @extend %flex;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .copi {
+    margin-top: 1rem;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+
+.item-li {
+  padding: .5rem;
+}
+
+
+
+.lab-footer {
+  text-align: center;
+}
+
+.decktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+  .decktop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .inst {
+      margin-right: .5rem !important;
+    }
+
+    .wrapper-vk,
+    .wrapper-you-tube {
+      margin: 0 .5rem !important;
+    }
+
+    .footer-title {
+      padding: .5rem;
+      border-bottom: 2px solid #fff;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .padding-r-n-d {
+      padding-right: 0;
+    }
+
+    .padding-l-n-d {
+      padding-left: 0;
+    }
+    .wrapper-comp {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+
+    .copi {
+      margin-top: 1rem;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .btn {
+      width: 280px;
+    }
+    .wrapper-logo img{
+      width: 100%;
+    }
+  }
+
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+}

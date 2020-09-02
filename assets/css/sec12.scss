@@ -1,0 +1,53 @@
+.wrapper-adresatik__address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.wrapper-adresatik__title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #3B398B;
+  margin-bottom: 20px;
+}
+.ad{
+  width: 90%;
+}
+.im{
+  align-self: center;
+}
+.sec12{
+  padding-top:3rem ;
+  padding-bottom: 50px;
+  .wrapper-title{
+    margin-bottom: 50px;
+  }
+}
+.wrapper-adresatik{
+  margin-bottom: 50px;
+}
+@media (min-width: 767px) {
+  .ad{
+    width: 80%;
+  }
+}
+@media (min-width: 990px) {
+  .ad{
+    width: 88%;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper-adresatik__title{
+    font-size: 24px;
+  }
+  .sec12{
+    padding-top:0;
+    padding-bottom: 90px;
+    .wrapper-title{
+      margin-bottom: 70px;
+    }
+  }
+  .wrapper-adresatik{
+    margin-bottom: 65px;
+  }
+}

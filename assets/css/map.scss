@@ -1,0 +1,31 @@
+.wrapper-map{
+  position: relative;
+  width:100%;
+  margin-top: 1.5rem;
+}
+#map{
+  width: 100%;
+  height: 300px;
+}
+
+//ЧБ цвет на карте
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+}
+@media only screen and  (min-width: 1200px){
+  .wrapper-map{
+    position: absolute;
+    top: -0;
+    right: 0;
+    width: 60%;
+    height: 460px;
+    margin-top: 0;
+  }
+  #map{
+    width: 100%;
+    height: 440px;
+  }
+}

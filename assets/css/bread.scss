@@ -1,0 +1,13 @@
+.bread-crumb{
+  padding: 1rem 0 0;
+}
+.breadcrumb{
+  background: none;
+  padding: .75rem 0rem;
+  margin-bottom: 0rem;
+}
+@media only screen and (min-width: 1200px){
+  .wrapper-bread-crumb{
+    margin-bottom: 1rem;
+  }
+}

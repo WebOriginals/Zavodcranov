@@ -1,0 +1,41 @@
+@import "style.scss";
+
+.sec6-main{
+  padding: 1rem 0;
+  background-size: 58%;
+  background-position: right 89%;
+  background-repeat: no-repeat;
+
+  .wrapper-text{
+    margin-bottom: 3rem;
+  }
+}
+.wrapper-big-title{
+  @include fluidFontSize(24px, 48px, 480px, 1280px, 30px);
+  font-weight: 900;
+  color: $background-color-bl;
+}
+.wrapper-big-subtitle{
+  @include fluidFontSize(10px, 18px, 480px, 1280px, 15px);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 990px) {
+  .sec6-main {
+    padding: 5rem 0;
+    background-size: 51%;
+    background-position: right 29%;
+    background-repeat: no-repeat;
+
+    .wrapper-text{
+      margin-bottom: 6rem;
+    }
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .sec6-main {
+    background-size: 40%;
+    background-position: right 9%;
+  }
+}

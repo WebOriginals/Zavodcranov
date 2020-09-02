@@ -1,0 +1,37 @@
+@import "style.scss";
+
+.sec1-main {
+  padding: .8rem 0;
+  background-color: #F1F1F1;
+  display: none;
+}
+
+@media only screen and (min-width: 990px){
+  .sec1-main {
+    display: block;
+  } 
+}
+.wrapper-contacte {
+  @extend %flex;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.sec1-main_address-email-phone-top {
+  @extend %flex;
+
+  img {
+    margin-right: 1rem;
+    align-self: center;
+  }
+  .wrapper-phone {
+    line-height: 1.1;
+    .phone-top{
+      display: block;
+    }
+  }
+  .address-top{
+    align-self: center;
+  }
+}

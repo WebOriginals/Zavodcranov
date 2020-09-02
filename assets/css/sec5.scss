@@ -1,0 +1,135 @@
+@import "style.scss";
+
+.sec5-main{
+  overflow: hidden;
+}
+.wrapper-card-calat {
+  //padding: 1rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.text-catal {
+  color: #949494;
+  @include fluidFontSize(12px, 14px, 480px, 1280px, 13px);
+  margin-bottom: .5rem;
+}
+
+.title-catal {
+  @include fluidFontSize(16px, 21px, 480px, 1280px, 18px);
+  font-weight: bold;
+  margin-bottom: .5rem;
+
+
+}
+
+.more {
+  @extend %flex;
+  cursor: pointer;
+  justify-content: flex-end;
+
+  .text-btn {
+    align-self: center;
+    @include fluidFontSize(16px, 21px, 480px, 1280px, 18px);
+    margin-right: 1rem;
+  }
+
+  .wrapper-img-catal {
+    align-self: center;
+
+  }
+}
+
+.position-right {
+  @extend %flex;
+  justify-content: flex-end;
+}
+
+.img-catal img {
+  width: 100%;
+}
+.img-catal{
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.wrapper-card-calat.cust{
+display: none;
+  overflow: hidden;
+}
+
+.img-catal{
+  width: 100%;
+  height: 170px;
+  background-position: center;
+  background-size: cover;
+}
+.img-catal-right{
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+}
+.foto{
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.wrapper-card-calat:hover .foto{
+  transform: scale(1.05);
+}
+.wrapper-btn{
+  text-align: center;
+}
+.sec5-main .wrapper-btn.mtb-3{
+  margin: 3rem 0;
+
+  .btn{
+    width: 270px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .wrapper-card-calat.cust{
+    width: 57vmax;
+    height: 600px;
+    display: block;
+  }
+  .wrapper-card-calat.non{
+    display: none;
+  }
+
+  .bg-width{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper-card-calat.left{
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .wrapper-card-calat.cust{
+    width: 56vmax;
+
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .wrapper-card-calat.cust {
+    height: 640px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .wrapper-card-calat.cust {
+    height: 95vh;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .wrapper-card-calat.cust {
+    height: 70vh;
+  }
+}

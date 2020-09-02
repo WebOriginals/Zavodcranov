@@ -1,0 +1,27 @@
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+
+    font-size: $f-min;
+    @media (min-width: $w-min) {
+    @if ($fallback) {
+      font-size: $fallback;
+  }
+    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
+  }
+    @media (min-width: $w-max) {
+    font-size: $f-max;
+  }
+}
+
+@mixin fluidMarginBottom($mb-min, $mb-max, $w-min, $w-max, $fallback: false) {
+
+  margin-bottom: $mb-min;
+  @media (min-width: $w-min) {
+    @if ($fallback) {
+      margin-bottom: $fallback;
+    }
+    margin-bottom: calcFluidMarginBottom($mb-min, $mb-max, $w-min, $w-max, px);
+  }
+  @media (min-width: $w-max) {
+    margin-bottom: $mb-max;
+  }
+}

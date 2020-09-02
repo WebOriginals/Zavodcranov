@@ -1,0 +1,80 @@
+@import "style.scss";
+
+.wrapper-title-cat{
+  color: #FFFFFF;
+  padding: 2rem 0;
+}
+.flex-bg{
+  @extend %flex;
+}
+
+
+.wrapper-text-title-btn{
+  height: 100%;
+  @extend %flex;
+  justify-content: space-around;
+  display: none;
+
+  .wrapper-btn{
+    align-self: center;
+    .btn{
+      width: 250px;
+    }
+  }
+}
+.wrapper-text-title{
+  align-self: center;
+
+  .title{
+    @include fluidFontSize(14px, 21px, 480px, 1280px, 18px);
+    font-weight: bold;
+  }
+  .subtitle{
+    @include fluidFontSize(14px, 14px, 480px, 1280px, 18px);
+  }
+}
+
+.wrapper-title-cat{
+
+  .subtitle{
+    @include fluidFontSize(14px, 24px, 480px, 1280px, 18px);
+  }
+  .titlee{
+    @include fluidFontSize(24px, 36px, 480px, 1280px, 30px);
+    font-weight: bold;
+  }
+}
+.bg-blue{
+  padding: 0 1rem;
+  width: 100%;
+  position: relative;
+  background: $background-color-bl;
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-blue{
+    width: 40%;
+    padding-left: 7.5rem;
+  }
+  .bg-grey{
+    padding: 0 7rem 0 0;
+    width: 60%;
+    position: relative;
+    background: #F1F1F1;
+  }
+ .wrapper-text-title-btn{
+   display: flex;
+   padding: 2rem 0;
+ }
+}
+@media only screen and (min-width: 1600px) {
+  .bg-blue{
+    width: 45%;
+    padding-left: 24.5rem;
+  }
+  .bg-grey{
+    width: 55%;
+    padding: 0 22rem 0 0;
+
+  }
+}

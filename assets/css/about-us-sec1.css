@@ -1,0 +1,17 @@
+.about_us-sec1 {
+  padding: 2rem 0; }
+
+.wrapper-img-about-us {
+  justify-content: center;
+  display: flex;
+  height: 100%; }
+
+.wrapper-img-about-us img {
+  width: 100%;
+  align-self: center; }
+
+@media only screen and (min-width: 1200px) {
+  .about_us-sec1 {
+    padding: 5rem 0 5rem; }
+  .wrapper-img-about-us {
+    padding-top: 1rem; } }

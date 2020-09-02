@@ -1,0 +1,19 @@
+@import "style.scss";
+
+.wrapper-pagination-pages{
+  @extend %flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.pagination{
+  padding: .5rem;
+  cursor: pointer;
+align-self: center;
+  &:hover{
+    color: #E31E24;
+  }
+}
+.pagination.active{
+  color: #E31E24;
+}

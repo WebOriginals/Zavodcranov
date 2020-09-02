@@ -1,0 +1,230 @@
+/*
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Body - not related to megamenu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+.description {
+  width: 80%;
+  margin: 50px auto;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu-mobile {
+  display: none;
+  padding: 20px;
+  &:after {
+    content: "x";
+    font-family: "Ionicons";
+    font-size: 2rem;
+    padding: 0;
+    float: right;
+    position: relative;
+
+  }
+}
+
+.menu-dropdown-icon {
+  &:before {
+    content: "";
+    font-family: "Ionicons";
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #fff;
+    color: #333;
+  }
+}
+
+.menu {
+  > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    //position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+    > li {
+      float: left;
+      padding: 0;
+      margin: 0;
+      a {
+        text-decoration: none;
+        padding: .5em 1.5em;
+        display: block;
+      }
+      &:hover {
+        color: #3B398B;
+      }
+      > ul {
+        display: none;
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        margin: 0;
+        list-style: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: white;
+        &:before,
+        &:after {
+          content: "";
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+        > li {
+          margin: 0;
+          padding-bottom: 0;
+          list-style: none;
+          width: 25%;
+          background: none;
+          float: left;
+          a {
+            color: #000;
+            padding: .2em 0;
+            width: 95%;
+            display: block;
+          }
+          > ul {
+            display: block;
+            padding: 0;
+            margin: 10px 0 0;
+            list-style: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+            &:before,
+            &:after {
+              content: "";
+              display: table;
+            }
+            &:after {
+              clear: both;
+            }
+            > li {
+              float: left;
+              width: 100%;
+              padding: 10px 0;
+              margin: 0;
+              font-size: .8em;
+              a {
+                border: 0;
+              }
+            }
+          }
+        }
+        &.normal-sub {
+          width: 300px;
+          left: auto;
+          padding: 10px 20px;
+          > li {
+            width: 100%;
+            a {
+              border: 0;
+              padding: 1em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-dropdown-icon {
+    &:before {
+      display: block;
+    }
+  }
+  .menu {
+    > ul {
+      display: none;
+      > li {
+        width: 100%;
+        float: none;
+        display: block;
+        a {
+          padding: 1.5em;
+          width: 100%;
+          display: block;
+        }
+        > ul {
+          position: relative;
+          &.normal-sub {
+            width: 100%;
+          }
+          > li {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+            &:first-child {
+              margin: 0;
+            }
+            > ul {
+              position: relative;
+              > li {
+                float: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .show-on-mobile {
+      display: block;
+    }
+  }
+}

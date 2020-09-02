@@ -1,0 +1,48 @@
+@import "style.scss";
+
+.sec11-main {
+  padding: 35px 0 0;
+  position: relative;
+
+  .address-top {
+    width: 80%;
+  }
+  .sec1-main_address-email-phone-top{
+    margin: 1rem 0;
+  }
+  .wrapper-soc svg:hover path{
+    fill: #E31E24;
+  }
+}
+.wrapper-soc{
+  @extend %flex;
+  margin-top: 3rem;
+
+  .inst{
+    margin-right: 1rem;
+  }
+  .wrapper-vk,
+  .wrapper-you-tube{
+    margin: 0 1rem;
+  }
+}
+.pad-cont{
+  padding-top: 0;
+}
+@media only screen and  (min-width: 1200px){
+  .sec11-main {
+      padding: 50px 0 130px;
+
+    .address-top {
+      width: 80%;
+    }
+
+  }
+  .pad-cont{
+    padding: 60px 0 250px;
+
+    .wrapper-map {
+      top: 22px;
+    }
+  }
+}

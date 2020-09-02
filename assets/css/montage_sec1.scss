@@ -1,0 +1,46 @@
+@import "style.scss";
+.montage_sec1{
+  padding:  0 0 4rem 0;
+  background-image: none;
+  .wrapper-btn {
+    text-align: left;
+  }
+  .btn{
+    min-width: 210px;
+  }
+}
+.text-bold{
+  font-weight: bold;
+  @include fluidFontSize(12px, 18px, 480px, 1280px, 14px);
+  @include fluidMarginBottom(15px, 35px, 480px, 1280px, 20px);
+}
+.red-list {
+padding-left: 18px;
+  li{
+    color: #E31E24;
+    @include fluidFontSize(12px, 16px, 480px, 1280px, 13px);
+    @include fluidMarginBottom(15px, 25px, 480px, 1280px, 20px);
+  }
+  span{
+    color: black;
+  }
+}
+.price{
+  @include fluidFontSize(24px, 32px, 480px, 1280px, 28px);
+  margin-bottom: 1.3rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 990px) {
+  .montage_sec1{
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 990px) {
+
+  .montage_sec1{
+    padding: 3rem 0 5rem;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center right;
+  }
+}
